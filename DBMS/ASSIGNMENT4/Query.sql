@@ -71,7 +71,7 @@ DELIMITER $$
 CREATE PROCEDURE get_order_detail(start_date DATE, end_date DATE)
 BEGIN
     IF start_date>end_date THEN 
-        SET start_date=end_date-Interval day(end_date) DAY;
+        SET start_date=(end_date-Interval day(end_date) DAY)+INTERVAL 1 DAY;
     END IF;
     SELECT orderedProducts.order_id , 
     orderedProducts.product_id ,
