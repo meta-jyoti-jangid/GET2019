@@ -21,41 +21,40 @@ public class HomeController {
 	
 	@GetMapping("/home")
 	public String home() {
-		//log.info("First Name");
 		return "home";
 	}
-//	@GetMapping("/AddStudentDetails")
-//	public String addStudentDeatils(Model model) {
-//		model.addAttribute(new Student());
-//		return "AddStudentDetails";
-//	}
-//	
-//	@PostMapping("/AddStudentDetails")
-//	public String addStudentDetails(@Validated Student student,	BindingResult result) {
-//		if (result.hasErrors()) {
-//			return "AddStudentDetails";
-//		} else {
-//
-//			log.info("First Name : " + student.getFirstName());
-//			log.info("Last Name : " + student.getLastName());
-//			log.info("Father Name : " + student.getFatherName());
-//			log.info("Email Id : " + student.getEmail());
-//			log.info("Student Class : " + student.getStudentClass());
-//			log.info("Student Age : " + student.getAge());
-//
-//			return "redirect:/home";
-//		}
-//	}
-//	
-//	@GetMapping("/ShowAllStudent")
-//	public String showStudentDetails(Model model) {
-//
-//		ArrayList<Student> list = new ArrayList<Student>();
-//		list = AllStudent.getStudent();
-//		
-//		model.addAttribute("student1", list);
-//
-//		return "ShowStudentDetails";
-//	}
-//	
+	@GetMapping("/AddStudentDetails")
+	public String addStudentDeatils(Model model) {
+		model.addAttribute(new Student());
+		return "AddStudentDetails";
+	}
+	
+	@PostMapping("/AddStudentDetails")
+	public String addStudentDetails(@Validated Student student,	BindingResult result) {
+		if (result.hasErrors()) {
+			return "AddStudentDetails";
+		} else {
+
+			log.info("First Name : " + student.getFirstName());
+			log.info("Last Name : " + student.getLastName());
+			log.info("Father Name : " + student.getFatherName());
+			log.info("Email Id : " + student.getEmail());
+			log.info("Student Class : " + student.getStudentClass());
+			log.info("Student Age : " + student.getAge());
+
+			return "redirect:/home";
+		}
+	}
+	
+	@GetMapping("/ShowAllStudent")
+	public String showStudentDetails(Model model) {
+
+		ArrayList<Student> list = new ArrayList<Student>();
+		list = AllStudent.getStudent();
+		
+		model.addAttribute("student1", list);
+
+		return "ShowStudentDetails";
+	}
+	
 }
