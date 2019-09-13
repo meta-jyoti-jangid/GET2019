@@ -10,16 +10,16 @@ public class AllStudent {
 			
 		
 		ArrayList<Student> list1 = new ArrayList<Student>();
-		Student s1 = new Student("Jaya", "kanwat", "RS kanwat",
+		Student s1 = new Student("Jaya", "Kanwat", "RS Kanwat",
 				"jaya.kanwat@metacube.com", "10", "15");
-		Student s2 = new Student("vijay", "Nayak", "Ram Nayak",
-				"vijay.Nayak@metacube.com", "9", "14");
-		Student s3 = new Student("Nikita", "Verma", "SK Verma",
-				"nikita.Verma@metacube.com", "11", "16");
-		Student s4 = new Student("Sapana", "Sharma", "Shyam Sharma",
-				"sapana.Sharma@metacube.com", "8", "12");
-		Student s5 = new Student("Dimple", "Garg", "JP Garg",
-				"dimple.Garg@metacube.com", "5", "9");
+		Student s2 = new Student("Vijay", "Nayak", "Dinesh Nayak",
+				"vijay.nayak@metacube.com", "11", "16");
+		Student s3 = new Student("Bhanu", "Verma", "Keshav Verma",
+				"bhanu.verma@metacube.com", "12", "17");
+		Student s4 = new Student("Sunny", "Sharma", "SRK",
+				"sunny.sharma@metacube.com", "8", "10");
+		Student s5 = new Student("Raj", "Yadav", "Ranjeet Yadav",
+				"raj.yadav@metacube.com", "5", "7");
 		list1.add(s1);
 		list1.add(s2);
 		list1.add(s3);

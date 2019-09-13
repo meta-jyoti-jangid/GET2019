@@ -6,9 +6,11 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-
 <body>
-<a href = "AddStudentDetails" align="center"><h1>AddStudentDetails</h1></a>
-<a href = "ShowAllStudent" align="center"><h1>ShowAllStudent</h1></a>
+<center>
+<h1>${message}</h1>
+<a href = "AddStudentDetails" ><h2>AddStudentDetails</h2></a>
+<a href = "ShowAllStudent" ><h2>ShowAllStudent</h2></a>
+</center>
 </body>
 </html>
